@@ -3,6 +3,7 @@
 <p>
   <strong>Contacts</strong>
   <ul>
+    <!-- if you throw a byebug statement here, you can inspect before the error -->
     <%- @membership.contacts.each do |contact| %>
       <li><%= contact.value %></li>
     <%- end %>
