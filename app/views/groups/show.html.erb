@@ -1,0 +1,10 @@
+<h1><%= link_to 'Groups', root_path %> > <%= @group.name %></h1>
+
+<p>
+  <strong>Memberships (<%= @group.memberships.count %>)</strong>
+  <ul>
+    <%- @group.memberships.each do |membership| %>
+      <li><%= membership.name %>: <%= link_to 'w/ Bullet', group_membership_path(@group, membership) %> : <%= link_to 'w/o Bullet', group_membership_path(@group, membership, skip_bullet: true) %> </li>
+    <%- end %>
+  </ul>
+</p>

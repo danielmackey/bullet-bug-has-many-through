@@ -1,0 +1,10 @@
+<h1><%= @membership.name %> in <%= @group.name %></h1>
+
+<p>
+  <strong>Contacts</strong>
+  <ul>
+    <%- @membership.contacts.each do |contact| %>
+      <li><%= contact.value %></li>
+    <%- end %>
+  </ul>
+</p>
