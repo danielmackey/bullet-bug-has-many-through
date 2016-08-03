@@ -43,7 +43,8 @@ group :development do
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
 
-  gem 'bullet', '~> 5.2.0'
+  gem 'bullet', '~> 5.2.0'   # this version is broken
+  # gem 'bullet', '~> 5.1.1' # this version works
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
