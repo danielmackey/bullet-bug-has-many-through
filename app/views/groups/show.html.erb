@@ -8,3 +8,12 @@
     <%- end %>
   </ul>
 </p>
+
+<p>
+  <strong>Contacts (<%= @group.group_contacts.count %>)</strong>
+  <ul>
+    <%- @group.group_contacts.each do |contact| %>
+      <li><%= contact.value %> (from <%= contact.person_name %>)</li>
+    <%- end %>
+  </ul>
+</p>
