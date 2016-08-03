@@ -3,7 +3,7 @@
 After upgrading to Bullet v5.2.0 (with a Rails 5.0.0 app) and had some regressions with some associations that I'm not really sure how to describe, so I made an app/repo to demonstrate it (jump to [setup instructions](#setup))
 
 ## Problem
-It appears to be a regression between Bullet `v.5.1.1` and `v5.2.0`, as rolling back to the previous 5.1.1 version works.
+It appears to be a regression between Bullet v5.1.1 and v5.2.0 ([see the diff](https://github.com/flyerhzm/bullet/compare/5.1.1...5.2.0)), as rolling back to the previous 5.1.1 version works.
 
 Given the following models/associations
 ```rb
